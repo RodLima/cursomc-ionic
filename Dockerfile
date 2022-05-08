@@ -1,6 +1,6 @@
-FROM node:16.14.2
+FROM node:latest
 
-RUN npm install -g ionic cordova
+RUN npm install -g @ionic/cli
 
 USER node
 

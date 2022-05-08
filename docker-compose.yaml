@@ -9,3 +9,4 @@ services:
         - 35729:35729
     volumes:
       - .:/home/node/app
+    command: /bin/sh -c "while sleep 1000; do :; done"

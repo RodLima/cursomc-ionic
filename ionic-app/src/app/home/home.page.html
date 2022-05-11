@@ -1,4 +1,24 @@
-<ion-header [translucent]="true">
+<ion-content padding>
+  <h3>Sistema de Pedidos</h3>
+  <img src="assets/icon/favicon.png" alt="logo" width="100">
+  <form>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" ></ion-input>
+    </ion-item>
+    <ion-button expand="block">Entrar</ion-button>
+  </form>
+  <ion-button expand="block" fill="outline">Registrar</ion-button>
+</ion-content>
+
+
+
+
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Inbox
@@ -22,4 +42,4 @@
   <ion-list>
     <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
   </ion-list>
-</ion-content>
+</ion-content> -->

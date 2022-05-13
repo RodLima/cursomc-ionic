@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +7,10 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  constructor(public navCtrl: NavController) {
+  constructor(public router: Router) {
   
   }
     login() {
-      this.navCtrl.navigateRoot('/CategoriasPage');
+      this.router.navigate(['/categorias'])
     }
 }
